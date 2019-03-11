@@ -1,1 +1,1 @@
-scp -i ~/.ssh/crux ../public/index.html root@metro-vpn.com:/var/www/html/index.html
+scp -i ~/.ssh/crux -r ../public root@metro-vpn.com:/var/www/html

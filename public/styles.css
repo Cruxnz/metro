@@ -1,0 +1,16 @@
+body {
+  min-height: 100%;
+  background: url(./metroc-vpn-bg.jpg);
+  background-color: #3B24A1;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  margin: 0;
+}
+
+html {
+  /* To make use of full height of page*/
+  min-height: 100%;
+  margin: 0;
+  overflow: hidden;
+}
