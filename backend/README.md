@@ -1,8 +1,6 @@
 # Info about backend
 
-Currently the backend is simply the forward proxy [Squid](http://www.squid-cache.org/). It doesn't make sense to implement our own forward proxy - the software already exists and it has all the features we need at this point. It supports HTTP and HTTPS, and also provides caching for optimisation.
-
-I played around with some basic forward proxy servers written in Node.js and Golang, but both were limited and would require a lot of extra work to be as effective as something like Squid. Other interesting options are [Tinyproxy](https://tinyproxy.github.io/)
+The backend is a flask server running in a Docker container.
 
 # Key technical terms
 
