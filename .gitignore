@@ -2,3 +2,4 @@
 node_modules
 *.ovpn
 auth
+__pycache__
