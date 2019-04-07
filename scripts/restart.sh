@@ -1,1 +1,1 @@
-sudo docker stop metro.server && sudo docker start metro.server
+docker stop metro.server && docker start metro.server
