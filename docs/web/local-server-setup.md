@@ -14,7 +14,7 @@
 
 7. Grant privileges to the user `GRANT ALL PRIVILEGES ON DATABASE metro_db TO metro`.
 
-8. Start the server with `./scripts/start.sh`.
+8. Start the server with `./scripts/start-web-server.sh`.
 
 9. Bash into the server container with `docker exec -it metro.server python`.
 
