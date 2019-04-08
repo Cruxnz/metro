@@ -8,4 +8,3 @@ Squid is a forward proxy supporting HTTP, HTTPS, FTP, and more. We want to set i
 
 3. `/usr/local/sbin/squid -k parse` to check the config, and `/usr/local/sbin/squid` to run Squid.
 
-4.

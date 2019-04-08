@@ -1,6 +1,6 @@
 # Set up Metro Server (Mac)
 
-1. Make sure Docker is installed. Run `./start.sh` in `scripts`.
+1. Make sure Docker is installed.
 
 2. Make sure Postgres is installed with `brew install postgresql`.
 
@@ -20,6 +20,4 @@
 
 10. Run `from app import db` then `db.create_all()` in the shell.
 
-11.
-
-8. `psql -d metro_db` to get into database shell.
+11. `psql -d metro_db` to get into database shell.
