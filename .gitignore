@@ -3,4 +3,4 @@ node_modules
 *.ovpn
 auth
 __pycache__
-deploy-web-server.sh
+certs
