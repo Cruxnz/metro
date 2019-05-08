@@ -12,7 +12,7 @@
 
 6. Create a database with `CREATE DATABASE metro_db;`.
 
-7. Grant privileges to the user `GRANT ALL PRIVILEGES ON DATABASE metro_db TO metro`.
+7. Grant privileges to the user `GRANT ALL PRIVILEGES ON DATABASE metro_db TO metro;`.
 
 8. Start the server with `./scripts/start-web-server.sh`.
 
