@@ -20,4 +20,4 @@
 
 10. Run `from app import db` then `db.create_all()` in the shell.
 
-11. `psql -d metro_db` to get into database shell.
+11. `psql -d metro_db` to get into database shell. `\dt` to view tables, and `\d vpn_user` to describe a table, where vpn_user is the table name.
