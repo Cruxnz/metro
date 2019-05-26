@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-class RegisterPage extends Component {
+class DownloadPage extends Component {
   render () {
     return (
       <div style={{
@@ -11,11 +11,11 @@ class RegisterPage extends Component {
           objectFit: 'contain',
           height: '80%',
           width: '100%'
-        }} src='./metro-logo@2x.png' />
-        Register Page
+        }} src='/metro-logo@2x.png' />
+        Download Page
       </div>
     )
   }
 }
 
-export default RegisterPage
+export default DownloadPage
