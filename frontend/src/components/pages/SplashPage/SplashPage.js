@@ -12,6 +12,7 @@ class SplashPage extends Component {
           height: '80%',
           width: '100%'
         }} src='./metro-logo@2x.png' />
+        Splash Page
       </div>
     )
   }
