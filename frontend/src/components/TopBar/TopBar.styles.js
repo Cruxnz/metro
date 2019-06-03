@@ -4,7 +4,7 @@ const styles = {
     flexDirection: 'row',
     justifyContent: 'space-between',
     backgroundImage: 'linear-gradient(to right, #e17d71, #5b5ed3)',
-    alignItems: 'center'
+    alignItems: 'center',
   },
 
   logo: {
