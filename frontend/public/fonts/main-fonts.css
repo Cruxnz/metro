@@ -1,0 +1,17 @@
+
+@font-face {
+  font-family: 'GelionRegular';
+  src: url('GelionRegular.woff') format('woff'), url('GelionRegular.otf') format('otf');
+}
+@font-face {
+  font-family: 'GelionBold';
+  src: url('GelionBold.woff') format('woff'), url('GelionBold.otf') format('otf');
+}
+@font-face {
+  font-family: 'CeraMedium';
+  src: url('CeraMedium.woff') format('woff'), url('CeraMedium.otf') format('otf');
+}
+@font-face {
+  font-family: 'CeraBold';
+  src: url('CeraBold.woff') format('woff'), url('CeraBold.otf') format('otf');
+}
