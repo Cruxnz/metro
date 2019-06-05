@@ -1,6 +1,6 @@
 import React from 'react'
 import SplashPage from './components/pages/SplashPage/SplashPage'
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
+import { BrowserRouter as Router, Route } from 'react-router-dom'
 import TopBar from './components/TopBar/TopBar'
 import RegisterPage from './components/pages/RegisterPage/RegisterPage'
 import DownloadPage from './components/pages/DownloadPage/DownloadPage'

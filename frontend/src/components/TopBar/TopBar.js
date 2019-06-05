@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import withStyles from 'react-jss'
 import styles from './TopBar.styles.js'
 
-class RegisterPage extends Component {
+class TopBar extends Component {
   render () {
     return (
       <div style={styles.outer}>
@@ -44,4 +44,4 @@ class RegisterPage extends Component {
   }
 }
 
-export default withStyles(styles)(RegisterPage)
+export default withStyles(styles)(TopBar)
