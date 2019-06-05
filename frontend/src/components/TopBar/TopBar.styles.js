@@ -5,6 +5,8 @@ const styles = {
     justifyContent: 'space-between',
     backgroundImage: 'linear-gradient(to right, #e17d71, #5b5ed3)',
     alignItems: 'center',
+    position: 'fixed',
+    width: '100vw'
   },
 
   logo: {
@@ -21,13 +23,13 @@ const styles = {
   },
 
   textLinkContainer: {
-    display:'flex',
+    display: 'flex',
     width: '20%',
     justifyContent: 'space-between'
   },
 
-  buttonContainer:{
-    display:'flex',
+  buttonContainer: {
+    display: 'flex',
     width: '15%',
     justifyContent: 'space-between',
     marginRight: 35

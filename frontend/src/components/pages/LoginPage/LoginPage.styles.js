@@ -1,5 +1,5 @@
 const styles = {
-  registerPageContainer: {
+  loginPageContainer: {
     display: 'flex',
     flexDirection: 'row',
     alignItems: 'center',
@@ -8,7 +8,7 @@ const styles = {
     width: '100vw'
   },
 
-  registerImageContainer: {
+  loginImageContainer: {
     width: '55vw',
     height: '100vh',
     backgroundColor: '#fff',
@@ -35,12 +35,23 @@ const styles = {
     color: '#c3c3c3'
   },
 
-  existingAccountLink: {
+  alternateLinksContainer: {
     marginTop: 8,
+    display: 'flex',
+    flexDirection: 'row',
+    justifyContent: 'space-between'
+  },
+
+  forgotPasswordLink: {
     fontFamily: 'Sans-Serif',
     fontSize: 12,
-    color: 'blue',
-    textAlign: 'right'
+    color: 'grey'
+  },
+
+  signUpPageLink: {
+    fontFamily: 'Sans-Serif',
+    fontSize: 12,
+    color: 'blue'
   },
 
   inputBox: {

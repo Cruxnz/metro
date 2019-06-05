@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
 import withStyles from 'react-jss'
 import styles from './RegisterPage.styles.js'
+import SubmitButton from '../../SubmitButton/SubmitButton'
 
 class RegisterPage extends Component {
   render () {
@@ -26,14 +28,12 @@ class RegisterPage extends Component {
               placeholder='Password'
               name='password'
             />
-            <input
-              className={classes.createAccountButton}
-              type='submit'
-              value='Create Account'
-            />
-            <a className={classes.existingAccountLink}>
+            <Link to='/'>
+              <SubmitButton text='Create Account' />
+            </Link>
+            <Link to='/Login' className={classes.existingAccountLink}>
               Or use an existing account
-            </a>
+            </Link>
           </form>
         </div>
       </div>
