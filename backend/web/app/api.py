@@ -2,6 +2,9 @@ from app import app, db
 from flask import jsonify, request, abort, make_response
 from app.models import VPNUser
 
+
+# Create a new VPN user
+# curl -d '{"username":"mahkaila", "password":"supasecret"}' -H "Content-Type: application/json" -X POST http://localhost:56733/api/users
 @app.route('/api/users', methods = ['POST'])
 def new_user():
   username = request.json.get('username')
@@ -19,6 +22,7 @@ def new_user():
   db.session.commit()
   return jsonify({ 'username': user.username, 'email': user.email }), 201
 
+# Log user in and return an auth_token
 @app.route('/api/login', methods = ['POST'])
 def login():
   # get the post data
