@@ -2,42 +2,24 @@ import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 import withStyles from 'react-jss'
 import styles from './TopBar.styles.js'
+import TopBarButton from '../TopBarButton/TopBarButton'
 
 class TopBar extends Component {
   render () {
+    const { classes } = this.props
     return (
-      <div style={styles.outer}>
-        <div style={styles.container}>
-          <div style={styles.leftSection}>
-            <Link to='/'>
-              <img style={styles.logo} src='/metro-logo@2x.png' />
-            </Link>
-          </div>
-          <div style={styles.rightSection}>
-            <div style={styles.buttonContainer}>
-              <div style={styles.link}>
-                Pricing
-              </div>
-              <div style={styles.link}>
-                How It Works
-              </div>
-              <div style={styles.link}>
-                Support
-              </div>
-            </div>
-            <div style={styles.buttonContainer}>
-              <Link to='/download/'>
-                <button style={styles.button}>
-                  Download
-                </button>
-              </Link>
-              <Link to='/login/'>
-                <button style={styles.button}>
-                  Login
-                </button>
-              </Link>
-            </div>
-          </div>
+      <div className={classes.outer}>
+        <Link to='/'>
+          <img className={classes.logo} src='/metro-logo@2x.png' />
+        </Link>
+        <div className={classes.textLinkContainer}>
+          <a className={classes.textLink}>Pricing</a>
+          <a className={classes.textLink}>How our VPN works</a>
+          <a className={classes.textLink}>Support</a>
+        </div>
+        <div className={classes.buttonContainer}>
+          <Link to='/download/'><TopBarButton text='Download' /></Link>
+          <Link to='/login/'><TopBarButton text='Login' /></Link>
         </div>
       </div>
     )
