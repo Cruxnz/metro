@@ -9,17 +9,21 @@ class TopBar extends Component {
     const { classes } = this.props
     return (
       <div className={classes.outer}>
-        <Link to='/'>
-          <img className={classes.logo} src='/metro-logo@2x.png' />
-        </Link>
-        <div className={classes.textLinkContainer}>
-          <a className={classes.textLink}>Pricing</a>
-          <a className={classes.textLink}>How our VPN works</a>
-          <a className={classes.textLink}>Support</a>
+        <div className={classes.leftHalf}>
+          <Link to='/'>
+            <img className={classes.logo} src='/metro-logo@2x.png' />
+          </Link>
         </div>
-        <div className={classes.buttonContainer}>
-          <Link to='/download/'><TopBarButton text='Download' /></Link>
-          <Link to='/login/'><TopBarButton text='Login' /></Link>
+        <div className={classes.rightHalf}>
+          <div className={classes.textLinkContainer}>
+            <a className={classes.textLink}>Pricing</a>
+            <a className={classes.textLink}>How our VPN works</a>
+            <a className={classes.textLink}>Support</a>
+          </div>
+          <div className={classes.buttonContainer}>
+            <Link to='/download/'><TopBarButton text='Download' /></Link>
+            <Link to='/login/'><TopBarButton text='Login' /></Link>
+          </div>
         </div>
       </div>
     )

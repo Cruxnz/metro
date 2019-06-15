@@ -1,13 +1,14 @@
+import { text, colors, metrics } from '../../common/constants/'
+
 const styles = {
   button: {
-    borderRadius: 20,
-    border: '2px solid #a6ea50',
+    ...text.style.buttonLowercase,
+    fontSize: '14px',
+    borderRadius: metrics.circleButton,
+    border: `${metrics.borderBaseWidth} solid ${colors.green}`,
     backgroundColor: 'transparent',
-    color: '#a6ea50',
+    color: colors.green,
     padding: '5px 20px',
-    fontWeight: 600,
-    fontFamily: 'Sans-Serif',
-    fontSize: 13
   }
 }
 
