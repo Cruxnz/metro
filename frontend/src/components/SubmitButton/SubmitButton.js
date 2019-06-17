@@ -6,7 +6,7 @@ class SubmitButton extends Component {
   render () {
     const { classes, customClass, text } = this.props
     return (
-      <button className={`${customClass} ${classes.button}`}>{text}</button>
+      <button className={`${classes.button} ${customClass}`}>{text}</button>
     )
   }
 }

@@ -1,4 +1,4 @@
-import { text, colors } from '../../../common/constants/'
+import { text, colors, metrics } from '../../../common/constants/'
 
 const styles = {
   container: {
@@ -8,13 +8,15 @@ const styles = {
   },
   header: {
     position: 'relative',
-    height: '300px',
-    backgroundImage: 'linear-gradient(#5252D4, #9666A3)'
+    height: '500px',
+    backgroundImage: 'linear-gradient(#5252D4, #9666A3)',
+    display: 'flex',
+    justifyContent: 'center'
   },
   content: {
     position: 'absolute',
     height: '100%',
-    width: '100%',
+    width: '75%',
     zIndex: 100,
     display: 'flex',
     flexDirection: 'row',
@@ -22,31 +24,79 @@ const styles = {
     backgroundColor: colors.dim
   },
   headerContainer: {
-    width: '300px',
-    height: '100px',
-    backgroundColor: colors.yellow
+    width: '500px',
+    backgroundColor: colors.dim
   },
-  headerTitle: {
-    ...text.style.input
+  subheading: {
+    ...text.style.subheading,
+    color: colors.white
+  },
+  heading: {
+    ...text.style.heading,
+    color: colors.yellow
   },
   headerButton: {
-    backgroundColor: colors.green
-  },
-  section: {
-    position: 'relative',
-    height: '300px',
-    backgroundImage: 'linear-gradient(#5252D4, #9666A3)'
+    ...text.style.buttonUppercase,
+    height: 40,
+    marginTop: metrics.section,
+    borderRadius: metrics.baseRadius,
+    color: 'white',
+    padding: `0 ${metrics.section}`,
+    border: `2px solid ${colors.green}`,
+    backgroundColor: colors.transparent,
+    '& hover': {
+      backgroundColor: colors.green
+    }
   },
   sectionTwo: {
+    position: 'relative',
     height: '300px',
+    display: 'flex',
+    justifyContent: 'center'
+  },
+  sectionTwoHeading: {
+    ...text.style.heading,
+    color: colors.red
+  },
+  sectionTwoBodycopy: {
+    ...text.style.bodycopyLarge,
+    marginTop: metrics.basePadding,
+    width: '350px',
+    color: colors.darkGray,
+    lineHeight: '20px'
+  },
+  sectionTwoButton: {
+    ...text.style.buttonUppercase,
+    height: 40,
+    marginTop: metrics.section,
+    borderRadius: metrics.baseRadius,
+    color: colors.red,
+    padding: `0 ${metrics.section}`,
+    border: `2px solid ${colors.red}`,
+    backgroundColor: colors.transparent,
+    '& hover': {
+      backgroundColor: colors.green
+    }
   },
   sectionThree: {
     position: 'relative',
     height: '400px',
-    backgroundImage: 'linear-gradient(#5252D4, #9666A3)'
+    backgroundImage: 'linear-gradient(#5252D4, #9666A3)',
+    display: 'flex',
+    justifyContent: 'center'
   },
   sectionFour: {
     height: '300px',
+    position: 'relative',
+    display: 'flex',
+    justifyContent: 'center'
+  },
+  footer: {
+    position: 'relative',
+    height: '300px',
+    backgroundImage: 'linear-gradient(#5252D4, #9666A3)',
+    display: 'flex',
+    justifyContent: 'center'
   },
   backgroundGradient: {
     backgroundImage: 'linear-gradient(#5252D4, #9666A3)'
