@@ -13,7 +13,7 @@ const type = {
 // Consider changing 'height' to 'width' for better accuracy
 
 const size = {
-  heading: '22px',
+  heading: '40px',
   subheading: '18px',
   bodycopySmall: '13px',
   bodycopy: '14px',
@@ -21,7 +21,7 @@ const size = {
   inputLabel: '10px',
   input: '20px',
   buttonUppercase: '12px',
-  buttonLowercase: '12px',
+  buttonLowercase: '14px',
   errorText: '12px',
   errorHeading: '16px',
   iconBase: '18px'
@@ -30,7 +30,7 @@ const size = {
 const spacing = {
   label: '3px',
   buttonLowercase: '.5px',
-  buttonUppercase: '5px'
+  buttonUppercase: '4px'
 }
 
 const style = {
