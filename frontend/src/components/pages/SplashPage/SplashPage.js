@@ -30,8 +30,93 @@ class SplashPage extends Component {
           </div>
         </div>
         <div style={styles.sectionTwo}>
-          <div style={styles.content}>
-            <div style={styles.headerContainer}>
+          <div style={styles.sectionTwoContent}>
+            <div style={styles.sectionTwoBoxesContainer}>
+              <div style={styles.sectionTwoBox}>
+                <div style={styles.sectionTwoBoxUpperSection}>
+                    Express Plan
+                </div>
+                <div style={styles.sectionTwoBoxHeading}>
+                    Free
+                </div>
+                <div style={styles.sectionTwoBoxBottomSection}>
+                  <div style={styles.sectionTwoBodySection}>
+                    <div style={styles.sectionTwoBodyContainer}>
+                      <div style={styles.sectionTwoTickIcon}>
+                        •
+                      </div>
+                      Ultra Encrypted
+                    </div>
+                    <div style={styles.sectionTwoBodyContainer}>
+                      <div style={styles.sectionTwoTickIcon}>
+                        •
+                      </div>
+                      500mb Data cap
+                    </div>
+                    <div style={styles.sectionTwoBodyContainer}>
+                      <div style={styles.sectionTwoTickIcon}>
+                        •
+                      </div>
+                      No Tracking!!
+                    </div>
+                  </div>
+                  <div style={styles.sectionTwoBoxButtonContainer}>
+                    <button style={styles.sectionTwoBoxButton}>
+                      Download Now
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div style={styles.sectionTwoBoxLong}>
+                <div style={styles.sectionTwoBoxUpperSection}>
+                    Maglev Plan
+                </div>
+                <div style={styles.sectionTwoBoxHeading}>
+                    $7.99
+                    <div style={styles.sectionTwoBoxDescription}> Per Month </div>
+                </div>
+                <div style={styles.sectionTwoBoxBottomSectionLong}>
+                  <div style={styles.sectionTwoBodySection}>
+                    <div style={styles.sectionTwoBodyContainer}>
+                      <div style={styles.sectionTwoTickIcon}>
+                        •
+                      </div>
+                      Ultra Encrypted
+                    </div>
+                    <div style={styles.sectionTwoBodyContainer}>
+                      <div style={styles.sectionTwoTickIcon}>
+                        •
+                      </div>
+                      No Data caps
+                    </div>
+                    <div style={styles.sectionTwoBodyContainer}>
+                      <div style={styles.sectionTwoTickIcon}>
+                        •
+                      </div>
+                      Surf as anyone
+                    </div>
+                    <div style={styles.sectionTwoBodyContainer}>
+                      <div style={styles.sectionTwoTickIcon}>
+                        •
+                      </div>
+                      Cancel Anytime
+                    </div>
+                    <div style={styles.sectionTwoBodyContainer}>
+                      <div style={styles.sectionTwoTickIcon}>
+                        •
+                      </div>
+                      No Tracking!!
+                    </div>
+                  </div>
+                  <div style={styles.sectionTwoBoxButtonContainer}>
+                    <button style={styles.sectionTwoBoxButton}>
+                      Sign Up Now
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div style={styles.sectionTwoRightContainer}>
               <div style={styles.subheading}>
                 -----
               </div>

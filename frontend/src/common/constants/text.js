@@ -21,7 +21,7 @@ const size = {
   inputLabel: '10px',
   input: '20px',
   buttonUppercase: '12px',
-  buttonLowercase: '12px',
+  buttonLowercase: '14px',
   errorText: '12px',
   errorHeading: '16px',
   iconBase: '18px'
