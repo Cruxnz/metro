@@ -55,24 +55,30 @@ const styles = {
     display: 'flex',
     justifyContent: 'center'
   },
-  sectionTwoContent: {
+  sectionContent: {
     position: 'absolute',
     height: '100%',
     width: '75%',
     zIndex: 100,
     display: 'flex',
     flexDirection: 'row',
-    backgroundImage: 'linear-gradient(to right, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0))'
+    justifyContent: 'center',
+    backgroundColor: colors.dimmer
+    // backgroundImage: 'linear-gradient(to right, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0))'
   },
   sectionTwoBoxesContainer: {
-    display: 'flex',
-    flexDirection: 'row',
-    alignItems: 'center'
-  },
-  sectionTwoRightContainer: {
     width: '500px',
     marginLeft: metrics.section,
-    backgroundImage: 'linear-gradient(to right, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0))'
+    display: 'flex',
+    flexDirection: 'row',
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: colors.dim
+  },
+  halfContainer: {
+    width: '500px',
+    marginLeft: metrics.section,
+    backgroundColor: colors.dim
   },
   sectionTwoBox: {
     width: '200px',
@@ -175,12 +181,12 @@ const styles = {
     ...text.style.heading,
     color: colors.red
   },
-  sectionTwoBodycopy: {
+  bodycopy: {
     ...text.style.bodycopyLarge,
     marginTop: metrics.basePadding,
-    width: '350px',
+    width: '75%',
     color: colors.darkGray,
-    lineHeight: '20px'
+    lineHeight: '25px'
   },
   sectionTwoButton: {
     ...text.style.buttonUppercase,
@@ -207,6 +213,30 @@ const styles = {
     position: 'relative',
     display: 'flex',
     justifyContent: 'center'
+  },
+  sectionFourContainer: {
+    width: '500px',
+    marginLeft: metrics.section,
+    backgroundColor: colors.dim
+  },
+  sectionFourButtonContainer: {
+    width: '100%',
+    display: 'flex',
+    justifyContent: 'space-between',
+  },
+  sectionFourButton: {
+    ...text.style.buttonUppercase,
+    height: 40,
+    marginTop: metrics.section,
+    marginBottom: metrics.basePadding,
+    borderRadius: metrics.baseRadius,
+    color: colors.red,
+    padding: `0 ${metrics.section}`,
+    border: `2px solid ${colors.red}`,
+    backgroundColor: colors.transparent,
+    '& hover': {
+      backgroundColor: colors.green
+    }
   },
   footer: {
     position: 'relative',

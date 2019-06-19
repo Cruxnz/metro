@@ -30,7 +30,7 @@ class SplashPage extends Component {
           </div>
         </div>
         <div style={styles.sectionTwo}>
-          <div style={styles.sectionTwoContent}>
+          <div style={styles.sectionContent}>
             <div style={styles.sectionTwoBoxesContainer}>
               <div style={styles.sectionTwoBox}>
                 <div style={styles.sectionTwoBoxUpperSection}>
@@ -116,14 +116,14 @@ class SplashPage extends Component {
                 </div>
               </div>
             </div>
-            <div style={styles.sectionTwoRightContainer}>
+            <div style={styles.halfContainer}>
               <div style={styles.subheading}>
                 -----
               </div>
               <div style={styles.sectionTwoHeading}>
                 Get around <br/> anonymously.
               </div>
-              <div style={styles.sectionTwoBodycopy}>
+              <div style={styles.bodycopy}>
                 We’re fanatical about your privacy and security. 
                 Cruise the net freely without being tracked
                 or hacked, using powerful encryption.
@@ -144,7 +144,49 @@ class SplashPage extends Component {
           </svg>
         </div>
         <div style={styles.sectionFour}>
-          <h1>Second section</h1>
+          <div style={styles.sectionContent}>
+            <div style={styles.halfContainer}>
+              <div style={styles.subheading}>
+                -----
+              </div>
+              <div style={styles.sectionTwoHeading}>
+                No restrictions.
+                <br/> Serious security.
+              </div>
+              <div style={styles.bodycopy}>
+                Stream or download anything,
+                from any of our servers, anywhere on Earth,
+                with your IP address hidden from prying eyes.
+              </div>
+              <button style={styles.sectionTwoButton}>
+                GET METRO VPN NOW
+              </button>
+            </div>
+            <div style={styles.halfContainer}>
+              <div style={styles.subheading}>
+                -----
+              </div>
+              <div style={styles.sectionTwoHeading}>
+                FAQ's
+              </div>
+              <div style={styles.sectionFourButtonContainer}>
+                <button style={styles.sectionFourButton}>
+                  ULTRA SECURE?
+                </button>
+                <button style={styles.sectionFourButton}>
+                  SPEED
+                </button>
+                <button style={styles.sectionFourButton}>
+                  GUARANTEES
+                </button>
+              </div>
+              <div style={styles.bodycopy}>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s
+                when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+              </div>
+            </div>
+          </div>
         </div>
         <div style={styles.footer}>
           <h1>Footer</h1>
