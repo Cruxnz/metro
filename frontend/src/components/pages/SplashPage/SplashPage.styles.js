@@ -21,12 +21,10 @@ const styles = {
     display: 'flex',
     flexDirection: 'row',
     alignItems: 'center',
-    // backgroundImage: 'linear-gradient(to right, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0))'
-    backgroundColor: colors.dim
+    // backgroundImage: 'linear-gradient(to right, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0))
   },
   headerContainer: {
-    width: '500px',
-    backgroundImage: 'linear-gradient(to right, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0))'
+    width: '500px'
   },
   subheading: {
     ...text.style.subheading,
@@ -63,7 +61,6 @@ const styles = {
     display: 'flex',
     flexDirection: 'row',
     justifyContent: 'center',
-    backgroundColor: colors.dimmer
     // backgroundImage: 'linear-gradient(to right, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0))'
   },
   sectionTwoBoxesContainer: {
@@ -72,13 +69,11 @@ const styles = {
     display: 'flex',
     flexDirection: 'row',
     justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: colors.dim
+    alignItems: 'center'
   },
   halfContainer: {
     width: '500px',
-    marginLeft: metrics.section,
-    backgroundColor: colors.dim
+    marginLeft: metrics.section
   },
   sectionTwoBox: {
     width: '200px',
@@ -177,7 +172,7 @@ const styles = {
       backgroundColor: colors.green
     }
   },
-  sectionTwoHeading: {
+  sectionHeading: {
     ...text.style.heading,
     color: colors.red
   },
@@ -203,10 +198,40 @@ const styles = {
   },
   sectionThree: {
     position: 'relative',
-    height: '400px',
+    height: '500px',
     backgroundImage: 'linear-gradient(to bottom right, #5252D4, #9666A3)',
     display: 'flex',
+    alignItems: 'center',
     justifyContent: 'center'
+  },
+  sectionThreeSectionContent: {
+    height: '50%',
+    width: '75%',
+    zIndex: 100,
+    display: 'flex',
+    flexDirection: 'row',
+    justifyContent: 'center',
+    backgroundColor: colors.tint
+    // backgroundImage: 'linear-gradient(to right, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0))'
+  },
+  sectionThreeRightHalfContainer: {
+    width: '500px',
+    padding: `${metrics.section} ${metrics.section} ${metrics.section} ${metrics.section}`,
+    marginLeft: metrics.section,
+    border: `2px solid ${colors.yellow}`,
+    borderRadius: metrics.baseRadius,
+    backgroundColor: colors.transparent
+  },
+  sectionThreeHeading: {
+    ...text.style.heading,
+    color: colors.yellow
+  },
+  sectionThreeBodycopy: {
+    ...text.style.bodycopyLarge,
+    marginTop: metrics.basePadding,
+    width: '90%',
+    color: colors.white,
+    lineHeight: '25px'
   },
   sectionFour: {
     height: '300px',
@@ -216,8 +241,7 @@ const styles = {
   },
   sectionFourContainer: {
     width: '500px',
-    marginLeft: metrics.section,
-    backgroundColor: colors.dim
+    marginLeft: metrics.section
   },
   sectionFourButtonContainer: {
     width: '100%',
@@ -240,10 +264,72 @@ const styles = {
   },
   footer: {
     position: 'relative',
-    height: '300px',
+    height: '500px',
     backgroundImage: 'linear-gradient(to bottom right, #5252D4, #9666A3)',
     display: 'flex',
+    alignItems: 'center',
     justifyContent: 'center'
+  },
+  footerContent: {
+    position: 'absolute',
+    height: '300px',
+    width: '75%',
+    zIndex: 100,
+    display: 'flex',
+    flexDirection: 'row',
+    alignItems: 'flex-start',
+    justifyContent: 'center',
+    // backgroundImage: 'linear-gradient(to right, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0))'
+  },
+  sectionRoundButton: {
+    ...text.style.buttonLowercase,
+    borderRadius: metrics.circleButton,
+    color: colors.red,
+    marginTop: metrics.section,
+    padding: `5px ${metrics.section} 7px ${metrics.section}`,
+    border: `2px solid ${colors.red}`,
+    backgroundColor: colors.transparent,
+    '& hover': {
+      backgroundColor: colors.green
+    }
+  },
+  footerLeftHalfContainer: {
+    width: '500px',
+    marginLeft: metrics.section,
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'flex-start'
+  },
+  footerRightHalfContainer: {
+    width: '500px',
+    marginLeft: metrics.section,
+    display: 'flex',
+    flexDirection: 'row',
+    justifyContent: 'flex-start'
+  },
+  thirdColumn: {
+    width: '33%',
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'flex-start'
+  },
+  footerLogo: {
+    width: '200px'
+  },
+  footerInformation: {
+    ...text.style.subheading,
+    marginTop: metrics.basePadding,
+    color: colors.white
+  },
+  footerTopicTitle: {
+    ...text.style.buttonUppercase,
+    color: colors.black,
+    marginBottom: metrics.baseLargePadding
+  },
+  footerTopicDescription: {
+    ...text.style.bodycopy,
+    color: colors.white,
+    marginTop: metrics.baseLargePadding
   },
   backgroundGradient: {
     backgroundImage: 'linear-gradient(to bottom right, #5252D4, #9666A3)'

@@ -120,7 +120,7 @@ class SplashPage extends Component {
               <div style={styles.subheading}>
                 -----
               </div>
-              <div style={styles.sectionTwoHeading}>
+              <div style={styles.sectionHeading}>
                 Get around <br/> anonymously.
               </div>
               <div style={styles.bodycopy}>
@@ -135,7 +135,26 @@ class SplashPage extends Component {
           </div>
         </div>
         <div style={styles.sectionThree}>
-          <h1 style={styles.h1}>Header Content</h1>
+          <div style={styles.sectionThreeSectionContent}>
+            <div style={styles.halfContainer}>
+              <div style={styles.subheading}>
+                XXXXXXXX
+              </div>
+            </div>
+            <div style={styles.sectionThreeRightHalfContainer}>
+              <div style={styles.subheading}>
+                -----
+              </div>
+              <div style={styles.sectionThreeHeading}>
+                How does <br/> Metro VPN work?
+              </div>
+              <div style={styles.sectionThreeBodycopy}>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s
+                when an unknown printer took a galley.
+              </div>
+            </div>
+          </div>
           <svg style={styles.svgBottom} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
             <polygon fill='white' points="0,100 100,0 100,100"/>
           </svg>
@@ -149,7 +168,7 @@ class SplashPage extends Component {
               <div style={styles.subheading}>
                 -----
               </div>
-              <div style={styles.sectionTwoHeading}>
+              <div style={styles.sectionHeading}>
                 No restrictions.
                 <br/> Serious security.
               </div>
@@ -158,15 +177,15 @@ class SplashPage extends Component {
                 from any of our servers, anywhere on Earth,
                 with your IP address hidden from prying eyes.
               </div>
-              <button style={styles.sectionTwoButton}>
-                GET METRO VPN NOW
+              <button style={styles.sectionRoundButton}>
+                Get Metro VPN Now
               </button>
             </div>
             <div style={styles.halfContainer}>
               <div style={styles.subheading}>
                 -----
               </div>
-              <div style={styles.sectionTwoHeading}>
+              <div style={styles.sectionHeading}>
                 FAQ's
               </div>
               <div style={styles.sectionFourButtonContainer}>
@@ -189,7 +208,63 @@ class SplashPage extends Component {
           </div>
         </div>
         <div style={styles.footer}>
-          <h1>Footer</h1>
+          <div style={styles.footerContent}>
+            <div style={styles.footerLeftHalfContainer}>
+              <div style={styles.sectionHeading}>
+                <img className={classes.footerLogo} src='/metro-logo@2x.png' />
+              </div>
+              <div style={styles.footerInformation}>
+                — 3rd Party Verified
+              </div>
+              <div style={styles.footerInformation}>
+                — Proudly New Zealand Owned
+              </div>
+              <div style={styles.footerInformation}>
+                — 0800 55 55 55
+              </div>
+            </div>
+            <div style={styles.footerRightHalfContainer}>
+              <div style={styles.thirdColumn}>
+                <div style={styles.footerTopicTitle}>
+                  EXPLORE
+                </div>
+                <div style={styles.footerTopicDescription}>
+                  Plans
+                </div>
+                <div style={styles.footerTopicDescription}>
+                  Download
+                </div>
+              </div>
+              <div style={styles.thirdColumn}>
+                <div style={styles.footerTopicTitle}>
+                  COMPANY
+                </div>
+                <div style={styles.footerTopicDescription}>
+                  FAQs
+                </div>
+                <div style={styles.footerTopicDescription}>
+                  Support
+                </div>
+                <div style={styles.footerTopicDescription}>
+                  About Us
+                </div>
+                <div style={styles.footerTopicDescription}>
+                  Careers
+                </div>
+              </div>
+              <div style={styles.thirdColumn}>
+                <div style={styles.footerTopicTitle}>
+                  T&Cs
+                </div>
+                <div style={styles.footerTopicDescription}>
+                  Terms & Conditions
+                </div>
+                <div style={styles.footerTopicDescription}>
+                  Legal
+                </div>
+              </div>
+            </div>
+          </div>
           <svg style={styles.svgTop} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
             <polygon fill='white' points="0,0 100,100 100,0"/>
           </svg>
