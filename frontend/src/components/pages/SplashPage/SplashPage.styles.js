@@ -177,7 +177,7 @@ const styles = {
       backgroundColor: colors.green
     }
   },
-  sectionTwoHeading: {
+  sectionHeading: {
     ...text.style.heading,
     color: colors.red
   },
@@ -240,10 +240,53 @@ const styles = {
   },
   footer: {
     position: 'relative',
-    height: '300px',
+    height: '500px',
     backgroundImage: 'linear-gradient(to bottom right, #5252D4, #9666A3)',
     display: 'flex',
+    alignItems: 'center',
     justifyContent: 'center'
+  },
+  footerContent: {
+    position: 'absolute',
+    height: '300px',
+    width: '75%',
+    zIndex: 100,
+    display: 'flex',
+    flexDirection: 'row',
+    alignItems: 'flex-start',
+    justifyContent: 'center',
+    backgroundColor: colors.dimmer
+    // backgroundImage: 'linear-gradient(to right, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0))'
+  },
+  sectionRoundButton: {
+    ...text.style.buttonLowercase,
+    borderRadius: metrics.circleButton,
+    color: colors.red,
+    marginTop: metrics.section,
+    padding: `5px ${metrics.section} 7px ${metrics.section}`,
+    border: `2px solid ${colors.red}`,
+    backgroundColor: colors.transparent,
+    '& hover': {
+      backgroundColor: colors.green
+    }
+  },
+  footerHalfContainer: {
+    width: '500px',
+    marginLeft: metrics.section,
+    backgroundColor: colors.dim
+  },
+  footerLogo: {
+    width: '200px'
+  },
+  footerInformation: {
+    ...text.style.subheading,
+    marginTop: metrics.basePadding,
+    color: colors.white
+  },
+  sectionFourButtonContainer: {
+    width: '100%',
+    display: 'flex',
+    justifyContent: 'space-between',
   },
   backgroundGradient: {
     backgroundImage: 'linear-gradient(to bottom right, #5252D4, #9666A3)'
