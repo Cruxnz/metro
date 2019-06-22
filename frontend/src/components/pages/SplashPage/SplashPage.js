@@ -135,7 +135,26 @@ class SplashPage extends Component {
           </div>
         </div>
         <div style={styles.sectionThree}>
-          <h1 style={styles.h1}>Header Content</h1>
+          <div style={styles.sectionThreeSectionContent}>
+            <div style={styles.halfContainer}>
+              <div style={styles.subheading}>
+                XXXXXXXX
+              </div>
+            </div>
+            <div style={styles.sectionThreeRightHalfContainer}>
+              <div style={styles.subheading}>
+                -----
+              </div>
+              <div style={styles.sectionThreeHeading}>
+                How does <br/> Metro VPN work?
+              </div>
+              <div style={styles.sectionThreeBodycopy}>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s
+                when an unknown printer took a galley.
+              </div>
+            </div>
+          </div>
           <svg style={styles.svgBottom} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
             <polygon fill='white' points="0,100 100,0 100,100"/>
           </svg>
@@ -190,7 +209,7 @@ class SplashPage extends Component {
         </div>
         <div style={styles.footer}>
           <div style={styles.footerContent}>
-            <div style={styles.footerHalfContainer}>
+            <div style={styles.footerLeftHalfContainer}>
               <div style={styles.sectionHeading}>
                 <img className={classes.footerLogo} src='/metro-logo@2x.png' />
               </div>
@@ -204,17 +223,45 @@ class SplashPage extends Component {
                 — 0800 55 55 55
               </div>
             </div>
-            <div style={styles.footerHalfContainer}>
-              <div style={styles.sectionFourButtonContainer}>
-                <button style={styles.sectionFourButton}>
+            <div style={styles.footerRightHalfContainer}>
+              <div style={styles.thirdColumn}>
+                <div style={styles.footerTopicTitle}>
                   EXPLORE
-                </button>
-                <button style={styles.sectionFourButton}>
+                </div>
+                <div style={styles.footerTopicDescription}>
+                  Plans
+                </div>
+                <div style={styles.footerTopicDescription}>
+                  Download
+                </div>
+              </div>
+              <div style={styles.thirdColumn}>
+                <div style={styles.footerTopicTitle}>
                   COMPANY
-                </button>
-                <button style={styles.sectionFourButton}>
+                </div>
+                <div style={styles.footerTopicDescription}>
+                  FAQs
+                </div>
+                <div style={styles.footerTopicDescription}>
+                  Support
+                </div>
+                <div style={styles.footerTopicDescription}>
+                  About Us
+                </div>
+                <div style={styles.footerTopicDescription}>
+                  Careers
+                </div>
+              </div>
+              <div style={styles.thirdColumn}>
+                <div style={styles.footerTopicTitle}>
                   T&Cs
-                </button>
+                </div>
+                <div style={styles.footerTopicDescription}>
+                  Terms & Conditions
+                </div>
+                <div style={styles.footerTopicDescription}>
+                  Legal
+                </div>
               </div>
             </div>
           </div>
