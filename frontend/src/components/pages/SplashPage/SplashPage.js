@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import SubmitButton from '../../SubmitButton/SubmitButton'
 import withStyles from 'react-jss'
+import Tilt from 'react-tilt'
 import styles from './SplashPage.styles.js'
 
 class SplashPage extends Component {
@@ -8,7 +9,24 @@ class SplashPage extends Component {
     const { classes, customClass, text } = this.props
     return (
       <div style={styles.container}>
+        <div style={styles.backgroundContent}>
+          <div style={styles.backgroundContainer}>
+            <div  style={styles.backgroundFadeLeftHalfContainer} />
+            <div  style={styles.backgroundFadeRightHalfContainer} />
+          </div>
+        </div>
         <div style={styles.header}>
+          <Tilt
+            className="Tilt"
+            options={{
+              speed: 4000,
+              max : 5,
+              scale: 1.01,
+              axis: 'y',
+              reset: false
+            }}
+            style={styles.tiltImage} >
+          </Tilt>
           <svg style={styles.svgBottom} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
             <polygon fill='white' points="0,100 100,0 100,100"/>
           </svg>
@@ -30,7 +48,7 @@ class SplashPage extends Component {
           </div>
         </div>
         <div style={styles.sectionTwo}>
-          <div style={styles.sectionContent}>
+          <div style={styles.sectionWhiteContent}>
             <div style={styles.sectionTwoBoxesContainer}>
               <div style={styles.sectionTwoBox}>
                 <div style={styles.sectionTwoBoxUpperSection}>
@@ -116,7 +134,7 @@ class SplashPage extends Component {
                 </div>
               </div>
             </div>
-            <div style={styles.halfContainer}>
+            <div style={styles.halfWhiteContainer}>
               <div style={styles.subheading}>
                 -----
               </div>
@@ -163,8 +181,8 @@ class SplashPage extends Component {
           </svg>
         </div>
         <div style={styles.sectionFour}>
-          <div style={styles.sectionContent}>
-            <div style={styles.halfContainer}>
+          <div style={styles.sectionWhiteContent}>
+            <div style={styles.halfWhiteContainer}>
               <div style={styles.subheading}>
                 -----
               </div>
@@ -181,7 +199,7 @@ class SplashPage extends Component {
                 Get Metro VPN Now
               </button>
             </div>
-            <div style={styles.halfContainer}>
+            <div style={styles.halfWhiteContainer}>
               <div style={styles.subheading}>
                 -----
               </div>

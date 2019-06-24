@@ -2,29 +2,85 @@ import { text, colors, metrics } from '../../../common/constants/'
 
 const styles = {
   container: {
-    display: '',
+    position: 'relative',
+    height: '100%',
+    width: '100%'
+  },
+  backgroundContent: {
+    position: 'absolute',
+    height: '100%',
+    width: '100%',
+    zIndex: 10,
+    display: 'flex',
     flexDirection: 'row',
-    justifyContent: 'space-around'
+    justifyContent: 'center',
+    pointerEvents: 'none'
+  },
+  backgroundContainer: {
+    height: '100%',
+    width: '75%',
+    display: 'flex',
+    flexDirection: 'row',
+    alignItems: 'center',
+    pointerEvents: 'none'
+  },
+  backgroundFadeLeftHalfContainer: {
+    width: '50%',
+    height: '100%',
+    marginLeft: metrics.section,
+    pointerEvents: 'none'
+  },
+  backgroundFadeRightHalfContainer: {
+    width: '50%',
+    height: '100%',
+    marginLeft: metrics.section,
+    pointerEvents: 'none',
+    backgroundImage: 'linear-gradient(to right, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0))'
+  },
+  tiltImage: {
+    height: '100%',
+    width: '100%',
+    display: 'flex',
+    flexDirection: 'row',
+    justifyContent: 'center',
+    alignItems: 'center',
+    overflow: 'hidden',
+    backgroundImage: 'url("/metro-splash-header-v1.jpg")',
+    backgroundPosition: 'center',
+    backgroundRepeat: 'no-repeat',
+    backgroundSize: 'cover',
+    display: 'flex',
+    justifyContent: 'center'
+  },
+  tiltInner: {
+    width: '50%',
+    height: '50%',
+    backgroundColor: colors.yellow
   },
   header: {
     position: 'relative',
     height: '500px',
-    backgroundImage: 'linear-gradient(to bottom right, #5252D4, #9666A3)',
+    // backgroundImage: 'linear-gradient(to bottom right, #5252D4, #9666A3)',
+    overflow: 'hidden',
     display: 'flex',
-    justifyContent: 'center'
+    justifyContent: 'center',
   },
   content: {
     position: 'absolute',
     height: '100%',
     width: '75%',
-    zIndex: 100,
+    zIndex: 15,
     display: 'flex',
     flexDirection: 'row',
     alignItems: 'center',
+    pointerEvents: 'none'
+    // backgroundColor: colors.dim
     // backgroundImage: 'linear-gradient(to right, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0))
   },
   headerContainer: {
-    width: '500px'
+    width: '500px',
+    marginLeft: metrics.basePadding,
+    backgroundColor: colors.blue
   },
   subheading: {
     ...text.style.subheading,
@@ -43,6 +99,7 @@ const styles = {
     padding: `0 ${metrics.section}`,
     border: `2px solid ${colors.green}`,
     backgroundColor: colors.transparent,
+    pointerEvents: 'auto',
     '& hover': {
       backgroundColor: colors.green
     }
@@ -51,29 +108,38 @@ const styles = {
     position: 'relative',
     height: '300px',
     display: 'flex',
+    zIndex: 20,
     justifyContent: 'center'
   },
-  sectionContent: {
+  sectionWhiteContent: {
     position: 'absolute',
     height: '100%',
     width: '75%',
-    zIndex: 100,
+    zIndex: 20,
     display: 'flex',
     flexDirection: 'row',
     justifyContent: 'center',
-    // backgroundImage: 'linear-gradient(to right, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0))'
+    // backgroundColor: colors.white
+    backgroundColor: colors.dimmer
   },
-  sectionTwoBoxesContainer: {
+  halfWhiteContainer: {
     width: '500px',
     marginLeft: metrics.section,
-    display: 'flex',
-    flexDirection: 'row',
-    justifyContent: 'center',
-    alignItems: 'center'
+    backgroundColor: colors.white,
+    backgroundColor: colors.yellow
   },
   halfContainer: {
     width: '500px',
+    backgroundColor: colors.green,
     marginLeft: metrics.section
+  },
+  sectionTwoBoxesContainer: {
+    width: '500px',
+    marginRight: metrics.section,
+    display: 'flex',
+    flexDirection: 'row',
+    backgroundColor: colors.red,
+    alignItems: 'center'
   },
   sectionTwoBox: {
     width: '200px',
@@ -89,7 +155,6 @@ const styles = {
     height: '375px',
     borderRadius: metrics.baseRadius,
     color: 'white',
-    marginRight: metrics.smallSection,
     border: `2px solid ${colors.red}`,
     backgroundColor: colors.white
   },
@@ -205,13 +270,13 @@ const styles = {
     justifyContent: 'center'
   },
   sectionThreeSectionContent: {
-    height: '50%',
+    position: 'absolute',
     width: '75%',
-    zIndex: 100,
+    zIndex: 10,
     display: 'flex',
     flexDirection: 'row',
     justifyContent: 'center',
-    backgroundColor: colors.tint
+    backgroundColor: colors.red
     // backgroundImage: 'linear-gradient(to right, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0))'
   },
   sectionThreeRightHalfContainer: {
@@ -220,7 +285,7 @@ const styles = {
     marginLeft: metrics.section,
     border: `2px solid ${colors.yellow}`,
     borderRadius: metrics.baseRadius,
-    backgroundColor: colors.transparent
+    backgroundColor: colors.purple
   },
   sectionThreeHeading: {
     ...text.style.heading,
@@ -274,11 +339,12 @@ const styles = {
     position: 'absolute',
     height: '300px',
     width: '75%',
-    zIndex: 100,
+    zIndex: 10,
     display: 'flex',
     flexDirection: 'row',
     alignItems: 'flex-start',
-    justifyContent: 'center',
+    justifyContent: 'center'
+    // backgroundColor: colors.dimmer
     // backgroundImage: 'linear-gradient(to right, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0))'
   },
   sectionRoundButton: {
@@ -296,6 +362,7 @@ const styles = {
   footerLeftHalfContainer: {
     width: '500px',
     marginLeft: metrics.section,
+    // backgroundColor: colors.dimmer,
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'flex-start'
@@ -342,13 +409,15 @@ const styles = {
     position: 'absolute',
     bottom: '0',
     width: '100%',
-    height: '6vw'
+    height: '6vw',
+    zIndex: 10
     /* set height to pixels if you want angle to change with screen width */
   },
   svgTop: {
     position: 'absolute',
     top: '0',
     width: '100%',
+    zIndex: 10,
     height: '6vw'
     /* set height to pixels if you want angle to change with screen width */
   }
