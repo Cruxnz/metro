@@ -4,7 +4,46 @@ const styles = {
   container: {
     position: 'relative',
     height: '100%',
-    width: '100%'
+    width: '100%',
+    minWidth: '1360px'
+  },
+  securityIconContainer: {
+    ...text.style.subheading,
+    color: colors.white,
+    display: 'flex',
+    flexDirection: 'row',
+    alignItems: 'flex-start'
+  },
+  securityIcon: {
+    fontSize: '20px',
+    marginRight: metrics.smallMargin,
+    color: colors.green
+  },
+  headingIconContainer: {
+    color: colors.white,
+    display: 'flex',
+    flexDirection: 'row',
+    alignItems: 'flex-start'
+  },
+  headingIcon: {
+    position: 'relative',
+    fontSize: '35px',
+    marginRight: metrics.baseLargePadding,
+    marginBottom: metrics.smallPadding,
+    color: colors.blue
+  },
+  sectionTwoHeadingIcon: {
+    position: 'relative',
+    fontSize: '50px',
+    right: '15px',
+    color: colors.blue
+  },
+  sectionThreeHeadingIcon: {
+    position: 'relative',
+    fontSize: '35px',
+    marginRight: metrics.baseLargePadding,
+    marginBottom: metrics.smallPadding,
+    color: colors.tinted
   },
   backgroundContent: {
     position: 'absolute',
@@ -28,14 +67,17 @@ const styles = {
     width: '50%',
     height: '100%',
     marginLeft: metrics.section,
-    pointerEvents: 'none'
+    pointerEvents: 'none',
+    backgroundColor: colors.blue,
+    opacity: 0.7,
+    filter: 'blur(200px)'
   },
   backgroundFadeRightHalfContainer: {
     width: '50%',
     height: '100%',
     marginLeft: metrics.section,
     pointerEvents: 'none',
-    backgroundImage: 'linear-gradient(to right, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0))'
+    backgroundImage: 'linear-gradient(to right, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0))',
   },
   tiltImage: {
     height: '100%',
@@ -51,11 +93,6 @@ const styles = {
     backgroundSize: 'cover',
     display: 'flex',
     justifyContent: 'center'
-  },
-  tiltInner: {
-    width: '50%',
-    height: '50%',
-    backgroundColor: colors.yellow
   },
   header: {
     position: 'relative',
@@ -79,8 +116,7 @@ const styles = {
   },
   headerContainer: {
     width: '500px',
-    marginLeft: metrics.basePadding,
-    backgroundColor: colors.blue
+    marginLeft: metrics.basePadding
   },
   subheading: {
     ...text.style.subheading,
@@ -109,6 +145,7 @@ const styles = {
     height: '300px',
     display: 'flex',
     zIndex: 20,
+    backgroundColor: colors.white,
     justifyContent: 'center'
   },
   sectionWhiteContent: {
@@ -120,25 +157,23 @@ const styles = {
     flexDirection: 'row',
     justifyContent: 'center',
     // backgroundColor: colors.white
-    backgroundColor: colors.dimmer
+    // backgroundColor: colors.dimmer
   },
   halfWhiteContainer: {
     width: '500px',
     marginLeft: metrics.section,
-    backgroundColor: colors.white,
-    backgroundColor: colors.yellow
+    // backgroundColor: colors.yellow
   },
   halfContainer: {
     width: '500px',
-    backgroundColor: colors.green,
+    // backgroundColor: colors.green,
     marginLeft: metrics.section
   },
   sectionTwoBoxesContainer: {
     width: '500px',
-    marginRight: metrics.section,
+    marginLeft: metrics.section,
     display: 'flex',
     flexDirection: 'row',
-    backgroundColor: colors.red,
     alignItems: 'center'
   },
   sectionTwoBox: {
@@ -276,7 +311,7 @@ const styles = {
     display: 'flex',
     flexDirection: 'row',
     justifyContent: 'center',
-    backgroundColor: colors.red
+    // backgroundColor: colors.red
     // backgroundImage: 'linear-gradient(to right, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0))'
   },
   sectionThreeRightHalfContainer: {
@@ -285,7 +320,7 @@ const styles = {
     marginLeft: metrics.section,
     border: `2px solid ${colors.yellow}`,
     borderRadius: metrics.baseRadius,
-    backgroundColor: colors.purple
+    // backgroundColor: colors.purple
   },
   sectionThreeHeading: {
     ...text.style.heading,
@@ -302,7 +337,9 @@ const styles = {
     height: '300px',
     position: 'relative',
     display: 'flex',
-    justifyContent: 'center'
+    justifyContent: 'center',
+    backgroundColor: colors.white,
+    zIndex: 20
   },
   sectionFourContainer: {
     width: '500px',
@@ -312,11 +349,13 @@ const styles = {
     width: '100%',
     display: 'flex',
     justifyContent: 'space-between',
+    marginTop: metrics.section,
+    marginBottom: metrics.basePadding,
+    flexWrap: 'wrap'
   },
   sectionFourButton: {
     ...text.style.buttonUppercase,
     height: 40,
-    marginTop: metrics.section,
     marginBottom: metrics.basePadding,
     borderRadius: metrics.baseRadius,
     color: colors.red,

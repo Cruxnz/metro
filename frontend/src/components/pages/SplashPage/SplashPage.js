@@ -32,11 +32,8 @@ class SplashPage extends Component {
           </svg>
           <div style={styles.content}>
             <div style={styles.headerContainer}>
-              <div style={styles.subheading}>
-                -----
-              </div>
-              <div style={styles.subheading}>
-                Security vetted. Guaranteed.
+              <div style={styles.securityIconContainer}>
+                <i className={`material-icons`} style={styles.securityIcon}>verified_user</i> Security vetted. Guaranteed.
               </div>
               <div style={styles.heading}>
                 Ultra secure VPN. <br/> High speed, easy to use.
@@ -135,8 +132,8 @@ class SplashPage extends Component {
               </div>
             </div>
             <div style={styles.halfWhiteContainer}>
-              <div style={styles.subheading}>
-                -----
+              <div style={styles.headingIconContainer}>
+                <i className={`material-icons`} style={styles.sectionTwoHeadingIcon}>keyboard_arrow_right</i>
               </div>
               <div style={styles.sectionHeading}>
                 Get around <br/> anonymously.
@@ -154,22 +151,17 @@ class SplashPage extends Component {
         </div>
         <div style={styles.sectionThree}>
           <div style={styles.sectionThreeSectionContent}>
-            <div style={styles.halfContainer}>
-              <div style={styles.subheading}>
-                XXXXXXXX
-              </div>
-            </div>
+            <div style={styles.halfContainer} />
             <div style={styles.sectionThreeRightHalfContainer}>
-              <div style={styles.subheading}>
-                -----
+              <div style={styles.headingIconContainer}>
+                <i className={`material-icons`} style={styles.sectionThreeHeadingIcon}>healing</i>
               </div>
               <div style={styles.sectionThreeHeading}>
                 How does <br/> Metro VPN work?
               </div>
               <div style={styles.sectionThreeBodycopy}>
                 Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s
-                when an unknown printer took a galley.
+                Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s.
               </div>
             </div>
           </div>
@@ -183,8 +175,8 @@ class SplashPage extends Component {
         <div style={styles.sectionFour}>
           <div style={styles.sectionWhiteContent}>
             <div style={styles.halfWhiteContainer}>
-              <div style={styles.subheading}>
-                -----
+              <div style={styles.headingIconContainer}>
+                <i className={`material-icons`} style={styles.headingIcon}>directions_run</i>
               </div>
               <div style={styles.sectionHeading}>
                 No restrictions.
@@ -200,8 +192,8 @@ class SplashPage extends Component {
               </button>
             </div>
             <div style={styles.halfWhiteContainer}>
-              <div style={styles.subheading}>
-                -----
+              <div style={styles.headingIconContainer}>
+                <i className={`material-icons`} style={styles.headingIcon}>ring_volume</i>
               </div>
               <div style={styles.sectionHeading}>
                 FAQ's
