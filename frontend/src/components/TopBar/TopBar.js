@@ -9,6 +9,12 @@ class TopBar extends Component {
     const { classes } = this.props
     return (
       <div className={classes.outer}>
+        <div style={styles.backgroundContent}>
+          <div style={styles.backgroundContainer}>
+            <div  style={styles.backgroundFadeLeftHalfContainer} />
+            <div  style={styles.backgroundFadeRightHalfContainer} />
+          </div>
+        </div>
         <div className={classes.leftHalf}>
           <Link to='/'>
             <img className={classes.logo} src='/metro-logo@2x.png' />
@@ -16,9 +22,9 @@ class TopBar extends Component {
         </div>
         <div className={classes.rightHalf}>
           <div className={classes.textLinkContainer}>
-            <a className={classes.textLink}>Pricing</a>
-            <a className={classes.textLink}>How our VPN works</a>
-            <a className={classes.textLink}>Support</a>
+            <Link to='/download/' className={classes.textLink}>Pricing</Link>
+            <Link to='/download/' className={classes.textLink}>How our VPN works</Link>
+            <Link to='/download/' className={classes.textLink}>Support</Link>
           </div>
           <div className={classes.buttonContainer}>
             <Link to='/download/'><TopBarButton text='Download' /></Link>

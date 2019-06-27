@@ -13,11 +13,11 @@ const type = {
 // Consider changing 'height' to 'width' for better accuracy
 
 const size = {
-  heading: '40px',
+  heading: '45px',
   subheading: '18px',
   bodycopySmall: '13px',
   bodycopy: '14px',
-  bodycopyLarge: '16px',
+  bodycopyLarge: '17px',
   inputLabel: '10px',
   input: '20px',
   buttonUppercase: '12px',

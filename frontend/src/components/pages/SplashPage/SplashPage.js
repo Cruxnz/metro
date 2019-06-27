@@ -32,17 +32,14 @@ class SplashPage extends Component {
           </svg>
           <div style={styles.content}>
             <div style={styles.headerContainer}>
-              <div style={styles.subheading}>
-                -----
-              </div>
-              <div style={styles.subheading}>
-                Security vetted. Guaranteed.
+              <div style={styles.securityIconContainer}>
+                <i className={`material-icons`} style={styles.securityIcon}>verified_user</i> Security vetted. Guaranteed.
               </div>
               <div style={styles.heading}>
                 Ultra secure VPN. <br/> High speed, easy to use.
               </div>
               <button style={styles.headerButton}>
-                DOWNLOAD FOR FREE
+                TRY FREE FOR A MONTH
               </button>
             </div>
           </div>
@@ -135,8 +132,8 @@ class SplashPage extends Component {
               </div>
             </div>
             <div style={styles.halfWhiteContainer}>
-              <div style={styles.subheading}>
-                -----
+              <div style={styles.headingIconContainer}>
+                <i className={`material-icons`} style={styles.sectionTwoHeadingIcon}>keyboard_arrow_right</i>
               </div>
               <div style={styles.sectionHeading}>
                 Get around <br/> anonymously.
@@ -153,23 +150,21 @@ class SplashPage extends Component {
           </div>
         </div>
         <div style={styles.sectionThree}>
+          <div style={styles.sectionThreeImageContainer}>
+            <img className={classes.sectionThreeImage} src='/metro-splash-train.png' />
+          </div>
           <div style={styles.sectionThreeSectionContent}>
-            <div style={styles.halfContainer}>
-              <div style={styles.subheading}>
-                XXXXXXXX
-              </div>
-            </div>
+            <div style={styles.halfContainer} />
             <div style={styles.sectionThreeRightHalfContainer}>
-              <div style={styles.subheading}>
-                -----
+              <div style={styles.headingIconContainer}>
+                <i className={`material-icons`} style={styles.sectionThreeHeadingIcon}>healing</i>
               </div>
               <div style={styles.sectionThreeHeading}>
                 How does <br/> Metro VPN work?
               </div>
               <div style={styles.sectionThreeBodycopy}>
                 Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s
-                when an unknown printer took a galley.
+                Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s.
               </div>
             </div>
           </div>
@@ -183,8 +178,8 @@ class SplashPage extends Component {
         <div style={styles.sectionFour}>
           <div style={styles.sectionWhiteContent}>
             <div style={styles.halfWhiteContainer}>
-              <div style={styles.subheading}>
-                -----
+              <div style={styles.headingIconContainer}>
+                <i className={`material-icons`} style={styles.headingIcon}>directions_run</i>
               </div>
               <div style={styles.sectionHeading}>
                 No restrictions.
@@ -200,8 +195,8 @@ class SplashPage extends Component {
               </button>
             </div>
             <div style={styles.halfWhiteContainer}>
-              <div style={styles.subheading}>
-                -----
+              <div style={styles.headingIconContainer}>
+                <i className={`material-icons`} style={styles.headingIcon}>ring_volume</i>
               </div>
               <div style={styles.sectionHeading}>
                 FAQ's
@@ -226,19 +221,22 @@ class SplashPage extends Component {
           </div>
         </div>
         <div style={styles.footer}>
+          <div style={styles.footerImageContainer}>
+            <img className={classes.footerImage} src='/metro-splash-footer-image.png' />
+          </div>
           <div style={styles.footerContent}>
             <div style={styles.footerLeftHalfContainer}>
               <div style={styles.sectionHeading}>
                 <img className={classes.footerLogo} src='/metro-logo@2x.png' />
               </div>
               <div style={styles.footerInformation}>
-                — 3rd Party Verified
+                <i className={`material-icons`} style={styles.footerIcon}>verified_user</i> 3rd Party Verified
               </div>
               <div style={styles.footerInformation}>
-                — Proudly New Zealand Owned
+                <i className={`material-icons`} style={styles.footerIcon}>location_on</i> Proudly New Zealand Owned
               </div>
               <div style={styles.footerInformation}>
-                — 0800 55 55 55
+                <i className={`material-icons`} style={styles.footerIcon}>phone</i> 0800 55 55 55
               </div>
             </div>
             <div style={styles.footerRightHalfContainer}>
