@@ -39,7 +39,7 @@ class SplashPage extends Component {
                 Ultra secure VPN. <br/> High speed, easy to use.
               </div>
               <button style={styles.headerButton}>
-                DOWNLOAD FOR FREE
+                TRY FREE FOR A MONTH
               </button>
             </div>
           </div>
@@ -150,6 +150,9 @@ class SplashPage extends Component {
           </div>
         </div>
         <div style={styles.sectionThree}>
+          <div style={styles.sectionThreeImageContainer}>
+            <img className={classes.sectionThreeImage} src='/metro-splash-train.png' />
+          </div>
           <div style={styles.sectionThreeSectionContent}>
             <div style={styles.halfContainer} />
             <div style={styles.sectionThreeRightHalfContainer}>
@@ -218,19 +221,22 @@ class SplashPage extends Component {
           </div>
         </div>
         <div style={styles.footer}>
+          <div style={styles.footerImageContainer}>
+            <img className={classes.footerImage} src='/metro-splash-footer-image.png' />
+          </div>
           <div style={styles.footerContent}>
             <div style={styles.footerLeftHalfContainer}>
               <div style={styles.sectionHeading}>
                 <img className={classes.footerLogo} src='/metro-logo@2x.png' />
               </div>
               <div style={styles.footerInformation}>
-                — 3rd Party Verified
+                <i className={`material-icons`} style={styles.footerIcon}>verified_user</i> 3rd Party Verified
               </div>
               <div style={styles.footerInformation}>
-                — Proudly New Zealand Owned
+                <i className={`material-icons`} style={styles.footerIcon}>location_on</i> Proudly New Zealand Owned
               </div>
               <div style={styles.footerInformation}>
-                — 0800 55 55 55
+                <i className={`material-icons`} style={styles.footerIcon}>phone</i> 0800 55 55 55
               </div>
             </div>
             <div style={styles.footerRightHalfContainer}>

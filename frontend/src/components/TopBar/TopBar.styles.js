@@ -9,7 +9,38 @@ const styles = {
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'space-between',
-    backgroundImage: 'linear-gradient(to right, #e17d71, #5b5ed3)'
+    backgroundImage: `linear-gradient(to right, ${colors.purple}, ${colors.blue})`
+  },
+  backgroundContent: {
+    position: 'absolute',
+    height: '60px',
+    width: '100%',
+    zIndex: 10,
+    display: 'flex',
+    flexDirection: 'row',
+    justifyContent: 'center',
+    pointerEvents: 'none'
+  },
+  backgroundContainer: {
+    height: '60px',
+    width: '75%',
+    display: 'flex',
+    flexDirection: 'row',
+    alignItems: 'center',
+    pointerEvents: 'none'
+  },
+  backgroundFadeLeftHalfContainer: {
+    width: '50%',
+    height: '60px',
+    marginLeft: metrics.section,
+    pointerEvents: 'none'
+  },
+  backgroundFadeRightHalfContainer: {
+    width: '50%',
+    height: '60px',
+    marginLeft: metrics.section,
+    pointerEvents: 'none',
+    backgroundImage: 'linear-gradient(to right, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0))',
   },
   leftHalf: {
     display: 'flex',
@@ -18,20 +49,24 @@ const styles = {
     marginLeft: metrics.section
   },
   logo: {
-    width: '170px'
+    position: 'relative',
+    width: '185px',
+    zIndex: 20
   },
   textLink: {
     ...text.style.bodycopy,
     fontSize: '15px',
     color: 'white',
-    marginLeft: metrics.section
+    marginLeft: metrics.section,
+    textDecoration: 'none'
   },
   rightHalf: {
     display: 'flex',
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'flex-end',
-    width: '600px'
+    width: '600px',
+    zIndex: 20
   },
   textLinkContainer: {
     display: 'flex',
