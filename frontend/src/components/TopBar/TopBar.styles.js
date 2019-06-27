@@ -2,12 +2,12 @@ import { text, colors, metrics } from '../../common/constants/'
 
 const styles = {
   outer: {
-    // position: 'absolute',
     width: '100%',
     height: '60px',
     display: 'flex',
     flexDirection: 'row',
     alignItems: 'center',
+    minWidth: '1360px',
     justifyContent: 'space-between',
     backgroundImage: `linear-gradient(to right, ${colors.purple}, ${colors.blue})`
   },
@@ -15,6 +15,7 @@ const styles = {
     position: 'absolute',
     height: '60px',
     width: '100%',
+    minWidth: '1360px',
     zIndex: 10,
     display: 'flex',
     flexDirection: 'row',
